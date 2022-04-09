@@ -1,6 +1,6 @@
 
 
-function maiorDeIdade(idade=10){
+function maiorDeIdade(idade=18){
     var MaiorDeIdade = idade
     if(MaiorDeIdade >= 18){
         console.log('Maior de idade!') 
@@ -9,7 +9,7 @@ function maiorDeIdade(idade=10){
     }
 }
 
-// maiorDeIdade(20)
+    maiorDeIdade()
 
 
 
