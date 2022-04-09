@@ -1,0 +1,27 @@
+<!-- Criar um algoritimo onde diz se é +, - ou nulo-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teste JavaScript </title>
+    Digite um numero: <input id="numero" type="number">
+    <button onclick="numero()">Enviar</button>
+
+    <script type="text/javascript">
+        function numero() {
+            var num = parseFloat(document.getElementById("numero").value);
+
+            if (num > 0)
+                alert(num + " é Positivo");
+            else
+                if (num < 0)
+                    alert(num + " é Negativo");
+                else
+                    alert("Nem positivo nem negativo, é nulo");
+        }
+    </script>
+
+</head>
+
+</html>
