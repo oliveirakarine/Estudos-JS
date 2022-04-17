@@ -1,20 +1,25 @@
 //float massa, altura, imc;
 function peso(pes, altura) {
   imc = pes / (altura ^ 2);
+  resposta = "";
 
-  if (imc < 20) {
-    console.log("IMC: %f\tAbaixo do peso\n", imc);
+  teste1 = imc < 20
+  if (teste1) {
+    reposta = "IMC: " + imc + " Abaixo do peso";
   } else if (imc >= 20 && imc < 25) {
-    console.log("IMC: %f\tPeso normal\n", imc);
+    resposta = "IMC: " + imc + " Peso normal";
   } else if (imc >= 25 && imc < 30) {
-    console.log("IMC: %f\tSobrepeso\n", imc);
+    resposta = "IMC: " + imc + " Sobrepeso";
   } else if (imc >= 30 && imc < 40) {
-    console.log("IMC: %f\tObesidade grau 1\n", imc);
+    resposta = "IMC: " + imc + " Obesidade grau 1";
   } else if (imc > 40) {
-    console.log("IMC: %f\tObesidade grau 2\n", imc);
+    resposta = "IMC: " + imc + " Obesidade grau 2";
   } else {
-    console.log("IMC: %f\tObesidade grau 3\n", imc);
+    (resposta = "IMC: " + imc + "Obesidade grau 3"), imc;
   }
+
+  return resposta;
 }
 
-peso(60, 1.65);
+resultado = peso(60, 1.65);
+console.log(resultado)
